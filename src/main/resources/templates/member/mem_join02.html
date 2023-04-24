@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/default_layout}">
+	<th:block layout:fragment="content">
+		<link rel="stylesheet" href="/css/join.css">
+		<div class="main_container">
+			<form id="join02_frm" method="post" action="">
+				<div class="mem_input_area">
+					<div class="input_area1">
+						<div class="mem_warning01">
+							* 아이디는 5~20자의 영문 대소문자와 숫자로만 입력해주세요.
+						</div>
+						<label for="mem_id">아이디 : </label>
+						<input id="mem_id" name="mem_id" type="text" pattern="[a-zA-Z0-9]{4,16}" autocomplete="new-password">
+						<button type="button" onclick="join02_js.fn_id_chk();">중복 확인</button>
+					</div>
+					
+					<div class="input_area2">
+						<label for="mem_name">이름 : </label>
+						<input id="mem_name" name="mem_name" type="text" autocomplete="new-password">
+					</div>
+					
+					<div class="input_area3">
+						<div class="mem_warning01">
+							* 비밀번호는 대문자, 소문자, 숫자, 특수문자를 사용하여 총 8자 이상 20자 이하로 작성해 주세요
+						</div>
+						<label for="mem_pwd">비밀번호 : </label>
+						<input id="mem_pwd" name="mem_pwd" type="password" oninput="join02_js.pwd_pattern_chk(this);" autocomplete="new-password">
+						<div id="pwd_effectiveness01"></div>
+					</div>
+					
+					<div class="input_area3">
+						<label for="mem_pwd_chk">비밀번호 확인 : </label>
+						<input id="mem_pwd_chk" name="mem_pwd_chk" type="password" oninput="join02_js.pwd_chk(this);" autocomplete="new-password">
+						<div id="pwd_effectiveness02"></div>
+					</div>
+					
+					<div class="input_area4">
+						<label for="mem_hp">핸드폰 번호 : </label>
+						<input id="mem_hp" name="mem_hp" type="text" autocomplete="new-password" oninput="join02_js.phone(this);" placeholder="숫자만 입력해 주세요">
+					</div>
+				</div>
+				<div class="">
+					<button type="button" onclick="join02_js.fn_all_ok();">가입하기</button>
+				</div>
+			</form>
+		</div>
+		<script src="/js/member/join.js"></script>
+	</th:block>
+</html>

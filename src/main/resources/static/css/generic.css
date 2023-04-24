@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.mem_warning01, .mem_warning02 {
+	font-size		: 12px;
+}
+
+.mem_warning01 {
+	color			: red;
+}
+
+.mem_warning02 {
+	color			: blue;
+}

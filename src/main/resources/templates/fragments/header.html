@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+	<th:block th:fragment="headerFragment">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="/css/main.css">
+			<script src="/js/main.js"></script>
+			<title>건희쇼핑몰</title>
+		</head>
+		<body>
+			<div id="header_content">
+				<div class="logo_image" >
+					<a href="/">logoImage</a>
+				</div>
+				<div class="site_title">
+					<a href="/">건희 쇼핑몰</a>
+				</div>
+				<div class="mem_button">
+					<a href="/member/mem_login">로그인</a>
+					<a href="/member/mem_join01">회원가입</a>
+				</div>
+			</div>
+	</th:block>
+</html>

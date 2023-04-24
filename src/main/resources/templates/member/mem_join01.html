@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/default_layout}">
+	<th:block layout:fragment="content">
+		<link rel="stylesheet" href="/css/join.css">
+		<div class="main_container">
+			<form id="join01_frm" method="get" action="/member/mem_join02">
+				<div class="join_content_01">
+					<div class="content_chk_01">
+						<label for="check_1">개인정보 처리 방침</label>
+						<input id="check_1" class="check_item" type="checkbox">
+							
+						<div class="text_area_1">
+							내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.
+							내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.
+						</div>
+					</div>
+					
+					<div class="content_chk_02">
+						<label for="check_2">약관 동의</label>
+						<input id="check_2" class="check_item" type="checkbox">
+						
+						<div class="text_area_2">
+							내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.
+							내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.
+							내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<button type="button" onclick="join01_js.fn_chk_all();">전부 동의</button>
+					<button type="button" onclick="join01_js.fn_chk_box();">다음</button>
+				</div>
+			</form>
+		</div>
+		<script src="/js/member/join.js"></script>
+	</th:block>
+</html>
